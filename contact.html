@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zazhiwihina. Контакты</title>
+    <link
+      rel="shortcut icon"
+      sizes="32x32"
+      href="../image/favicon-rounded/favicon.ico"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <div class="container__body">
+      <header class="header">
+        <div class="container-center header_flex">
+          <a href="index.html" class="header__link">
+            <img
+              src="image/favicon-rounded/favicon-32x32.png"
+              alt="logo site"
+            />Zazhiwihina</a
+          >
+          <nav class="nav">
+            <a href="index.html" class="nav__element">Главная</a>
+            <a href="aboutMe.html" class="nav__element">Обо мне</a>
+            <a href="contact.html" class="nav__element">Контакты</a>
+          </nav>
+        </div>
+      </header>
+      <div class="connection">
+        <div class="container-center connection_flex">
+          <div class="contact">
+            <h2 class="contact__head">Заживихина Валерия</h2>
+            <div class="contact__box">
+              <img
+                src="image/phone.svg"
+                alt="telephone number"
+                class="contact__box-icon"
+              />
+              <h4 class="contact__box-h4">8 961 393 68 78</h4>
+            </div>
+            <div class="contact__box">
+              <img
+                src="image/letter.svg"
+                alt="e-maile"
+                class="contact__box-icon"
+              />
+              <h4 class="contact__box-h4">zazhiwihina@yandex.ru</h4>
+            </div>
+            <div class="contact__box">
+              <img src="image/world.svg" alt="site" class="contact__box-icon" />
+              <h4 class="contact__box-h4">г. Тольятти</h4>
+            </div>
+          </div>
+          <div class="feedback">
+            <h2 class="feedback__message">Отправьте мне сообщение</h2>
+            <p class="feedback__text">
+              Если у вас есть какие-либо вопросы или предложения по
+              сотрудничеству - заполните форму ниже
+            </p>
+            <form action="script/send.php" method="POST" id="form" name="form">
+              <div class="input-box">
+                <input
+                  type="text"
+                  placeholder="Введите имя"
+                  id="name"
+                  name="name"
+                  data-reg="^[а-яА-ЯёЁ]+ ?[а-яА-ЯёЁ]+ ?[а-яА-ЯёЁ]+$"
+                />
+                <label for="name">Только русские буквы</label>
+              </div>
+              <div class="input-box">
+                <input
+                  type="text"
+                  placeholder="Введите email"
+                  id="email"
+                  name="email"
+                  data-reg="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$"
+                />
+                <label for="email">В формате: admin@mail.com</label>
+              </div>
+              <div class="input-box">
+                <input
+                  type="text"
+                  placeholder="Введите телефон"
+                  id="phone"
+                  name="phone"
+                  data-reg="^((\+7|7|8)+([0-9]){10})$"
+                />
+                <label for="phone">В формате: (8)(7)(+7)ХХХХХХХХХХ</label>
+              </div>
+              <div class="input-box input-box__message">
+                <textarea
+                  placeholder="Сообщение"
+                  required
+                  name="message"
+                ></textarea>
+              </div>
+              <div class="input-button">
+                <input
+                  type="submit"
+                  value="Отправить"
+                  id="button"
+                  name="button"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="container-center footer_flex">
+          <div class="footer__box">
+            <a href="https://vk.com/id187580643" class="footer__box-link">
+              <img src="image/vk.svg" alt="icon vk" class="footer__box-icon" />
+            </a>
+            <a
+              href="https://www.instagram.com/lzazhivikhina"
+              class="footer__box-link"
+            >
+              <img
+                src="image/instagram.svg"
+                alt="icon instagram"
+                class="footer__box-icon"
+              />
+            </a>
+            <a href="https://t.me/valeria_zazhivihina" class="footer__box-link">
+              <img
+                src="image/telegram.svg"
+                alt="icon telegram"
+                class="footer__box-icon"
+              />
+            </a>
+            <a href="https://github.com/lerochkaz" class="footer__box-link">
+              <img
+                src="image/git.svg"
+                alt="icon git"
+                class="footer__box-icon"
+              />
+            </a>
+          </div>
+          <p class="footer__box-text">
+            Copyright &copy;2024 All rights reserved
+          </p>
+        </div>
+      </footer>
+    </div>
+    <script src="script/feedback.js"></script>
+  </body>
+</html>

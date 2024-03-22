@@ -1,0 +1,24 @@
+@import vars
+
+*
+    margin: 0
+    padding: 0
+    border: 0
+    box-sizing: border-box
+    text-decoration: none
+    font-size: $base-font-size
+
+@import mixins
+@import header
+@import footer
+@import index
+@import aboutMe
+@import contact
+@import media
+
+.container
+    &__body
+        @include flex-column
+
+    &-center
+        @include container-center

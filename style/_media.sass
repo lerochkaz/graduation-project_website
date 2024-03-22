@@ -1,0 +1,99 @@
+@media (min-width: 1250px)
+    .banner
+        &__text
+            width: 45%
+    .contact
+        width: 35%
+
+@media (max-width: $screen-large-size)
+    *
+        font-size: $middle-size
+
+@media (max-width: $screen-middle-size)
+    *
+        font-size: $small-size
+
+    .work__box-img
+        width: 40vw
+
+    .skill
+        &_flex-boxes
+            width: 90%
+        &__box
+            gap: 0.7rem
+            padding: 1.5rem 2rem
+
+@media (max-width: $screen-change-mobile)
+    *
+        font-size: $base-font-size
+
+    .header_flex
+        flex-direction: column
+
+    .nav__element
+        padding: 0.8rem
+
+    .banner
+        padding: 4rem 0 6rem
+        &_flex
+            flex-direction: column-reverse
+            gap: 0rem
+        &__text
+            width: 97%
+            text-align: center
+            padding-top: 4rem
+            &-h1
+                @include heading-options($heading-2)
+            &-h2
+                @include heading-options($heading-3)
+
+    .skill
+        &_flex-boxes
+            flex-direction: column
+        &__box
+            padding: 2rem 3rem
+
+    .work
+        &__head
+            gap: 6rem
+        &_flex
+            gap: 3rem
+        &__box
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            &__line
+                border-top: 2px solid $color-light
+                align-items: center
+                width: 98%
+                padding-bottom: 2rem
+            &_flex
+                gap: 3rem
+            &-img
+                width: 98%
+
+    .about
+        &-padding
+            padding: 3rem 0 5rem
+        &_flex
+            flex-direction: column
+            align-items: center
+        &__box
+            text-align: center
+            align-items: center
+        &__img
+            width: 100%
+
+    .blog
+        padding: 6rem 0
+        &_flex
+            width: 85vw
+
+    .connection
+        padding: 3rem 0
+        &_flex
+            flex-direction: column
+            gap: 3rem
+        .contact, .feedback
+            max-width: 98%
+            padding: 3.5rem 2rem

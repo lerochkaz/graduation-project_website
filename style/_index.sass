@@ -1,0 +1,84 @@
+.banner
+    padding: 4rem 0 5rem
+    &_flex
+        @include flex-center
+        gap: 2rem
+    &__text
+        width: 55%
+        &-h1
+            @include heading-options($heading-1)
+            padding-bottom: 2rem
+        &-h2
+            @include heading-options($heading-2)
+    &__img
+        width: 23rem
+        border-radius: 50%
+        box-shadow: $shadow
+
+.skill
+    &_flex
+        @include flex-column
+        align-items: center
+        background-color: $color-light
+        border-radius: $border-radius
+        width: 97%
+    &_flex-boxes
+        @include flex-around-center
+        width: 83%
+        gap: 2rem
+        padding: 2rem 0 3rem
+        align-items: stretch
+    &__head
+        @include heading-options($heading-2)
+        padding-top: 2rem
+    &__box
+        @include flex-column
+        gap: 1.5rem
+        padding: 2rem 2rem
+        background-color: $color-white
+        border-radius: $border-radius
+        flex-grow: 1
+        flex-basis: 0
+        &:hover
+            @include shadow(0.3s)
+        &__el
+            @include text-options('Jost', 400, $normal-text)
+            line-height: 125%
+            list-style-type: none
+            text-align: center
+            padding-bottom: 1rem
+            &:last-of-type
+                padding-bottom: 0
+        &__icon
+            width: 5rem
+            align-self: center
+
+.work
+    &_flex
+        @include flex-column
+        align-items: center
+        gap: 3rem
+    &__head
+        @include heading-options($heading-2)
+        text-align: center
+        padding-top: 5rem
+    &__box
+        @include flex-start
+        gap: 2rem
+        &_flex
+            @include flex-column
+            align-items: stretch
+            gap: 2rem
+            padding-bottom: 5rem
+        &-img
+            width: 25rem
+            border-radius: $border-radius
+            box-shadow: $shadow
+        &__text
+            @include flex-column
+            gap: 0.5rem
+            padding-top: 0.5rem
+            &-h3
+                @include heading-options($heading-3)
+            &-p
+                @include paragraph-options($medium-paragraph)
